@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=”utf-8” />
+        <title> Coin Row Problem </title>
+        <link href = "css/styles.css" rel = "stylesheet" type = "text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1> Dynamic Programming </h1>
+        </header>
+        <nav>
+            <a href = "index.html" >Overview</a>
+            <a href = "fibonacci.html" >Computing nth Fibonacci Number</a>
+            <a class="active" href = "coinRow.html" >Coin Row Problem</a>
+            <a href = "warshall.html" >Warshall's Algorithm</a>
+        </nav>
+
+         <main>
+             <div>
+               <figure>
+                   <img src = "img/coinrow.jpg" alt = "Picture of coins in a row" />
+               </figure>
+
+            </div>
+            
+            <div>
+                The coin row problem is another case where dynamic programming
+                can be applied.
+                <p>The coin row problem: There are a row of coins of varying
+                values. The aim is to pick up the coins that together yield the
+                maximum amount of money, without picking up two coins that are 
+                adjacent to each other in the original row.</p>
+                <p>The recurrence realtion is defined as follows: 
+                <br />
+                F(n) = max{Coins[n] + F[n &#8722 2], F[n &#8722 1]} for n > 1,
+                <br />
+                F(0) = 0, F(1) = Coins[1].
+                <br />
+                Using dynamic programming, F(n) is calculated for each coin, and
+                the value is stored in a table. The solution for the final coin
+                is the solution to the original problem.</p>
+                <small>Source: <a href = "http://www.basicsbehind.com/dynamic-programming/"
+                 >http://www.basicsbehind.com/dynamic-programming/</a></small>
+                 <br />
+                 <small>Photo credit: <a href = "http://paulbourke.net/fun/coins5.html" 
+                 >http://paulbourke.net/fun/coins5.html</a></small>
+            </div>
+        </main>
+        
+        <footer>
+            <hr>
+            2018&copy; Bonert
+            <br />
+            CST 336:Internet Programming<br />
+        </footer>
+    </body>
+</html>
