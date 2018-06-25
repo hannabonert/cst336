@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=”utf-8” />
+        <title> Warshall's Algorithm </title>
+        <link href = "css/styles.css" rel = "stylesheet" type = "text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1> Dynamic Programming </h1>
+        </header>
+        <nav>
+            <a href = "index.html" >Overview</a>
+            <a href = "fibonacci.html" >Computing nth Fibonacci Number</a>
+            <a href = "coinRow.html" >Coin Row Problem</a>
+            <a class="active" href = "warshall.html" >Warshall's Algorithm</a>
+        </nav>
+        
+         <main>
+             <div>
+               <figure>
+                   <img src = "img/warshall.jpg" alt = "Picture of progression of Warshall's Algorithm" />
+               </figure>
+            </div>
+            
+            <div>
+                <p>Warshall's algorithm uses dynamic programming to compute the transitive
+                closure of a graph. It loops through each vertex, calculating new
+                paths through the current vertex that connect vertices that 
+                previously did not have a path connecting them. After all vertices
+                have been considered, the transitive closure has been computed.</p>
+                Pseudocode:
+                <br />
+                <code>1 let dist be a |V| × |V| array of minimum distances initialized to ∞ (infinity)
+                      <br />
+                      2 for each edge (u,v)
+                      <br />
+                      3    dist[u][v] ← w(u,v)  // the weight of the edge (u,v)
+                      <br />
+                      4 for each vertex v
+                      <br />
+                      5    dist[v][v] ← 0
+                      <br />
+                      6 for k from 1 to |V|
+                      <br />
+                      7    for i from 1 to |V|
+                      <br />
+                      8       for j from 1 to |V|
+                      <br />
+                      9          if dist[i][j] > dist[i][k] + dist[k][j] 
+                      <br />
+                      10             dist[i][j] ← dist[i][k] + dist[k][j]
+                      <br />
+                      11         end if</code>
+                      <br />
+                <small>Source: <a href = "https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm#Algorithm"
+                 >https://en.wikipedia.org/wiki/Floyd%E2%80%93Warshall_algorithm#Algorithm</a></small>
+                 <br />
+                 <small>Photo credit: <a href = "http://apprize.info/c/algorithms_2/23.html" 
+                 >http://apprize.info/c/algorithms_2/23.html</a></small>
+            </div>
+        </main>
+
+        <footer>
+            <hr>
+            2018&copy; Bonert
+            <br />
+            CST 336:Internet Programming<br />
+        </footer>
+    </body>
+</html>
