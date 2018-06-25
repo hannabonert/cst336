@@ -32,15 +32,15 @@
                 have been considered, the transitive closure has been computed.</p>
                 Pseudocode:
                 <br />
-                <code>1 let dist be a |V| × |V| array of minimum distances initialized to ∞ (infinity)
+                <code>1 let dist be a |V| × |V| array of minimum distances initialized to (infinity)
                       <br />
                       2 for each edge (u,v)
                       <br />
-                      3    dist[u][v] ← w(u,v)  // the weight of the edge (u,v)
+                      3    dist[u][v] =  w(u,v)  // the weight of the edge (u,v)
                       <br />
                       4 for each vertex v
                       <br />
-                      5    dist[v][v] ← 0
+                      5    dist[v][v] = 0
                       <br />
                       6 for k from 1 to |V|
                       <br />
@@ -50,7 +50,7 @@
                       <br />
                       9          if dist[i][j] > dist[i][k] + dist[k][j] 
                       <br />
-                      10             dist[i][j] ← dist[i][k] + dist[k][j]
+                      10             dist[i][j] = dist[i][k] + dist[k][j]
                       <br />
                       11         end if</code>
                       <br />
