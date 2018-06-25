@@ -9,6 +9,10 @@ echo "<br>";
 echo 'Labs';
 echo "<br>";
 echo '<a href="labs/lab1/index.html">Lab 1</a>';
+echo "<br>";
+echo 'Homeworks';
+echo "<br>";
+echo '<a href="hw/homework1/index.html">Homework 1</a>';
 ?>
 </body>
 </html>
