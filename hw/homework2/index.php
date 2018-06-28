@@ -18,27 +18,15 @@
         <div id = "main">
             
            <?php
-              $cards = array();
-              
-              for($i = 1; $i < 3; $i++)
-              {
-                  ${"card" . $i} = rand(0, 5);
-                  displayCardImages(${"card" . $i});
-                  $cards[] = ${"card" . $i};
-              }
-              
-              echo "<br />";
-              $message = evaluateCards($cards) ? "You won- It's a Match!" : "You lost!- Your cards don't match.";
-              
-              
-              echo "$message";
-              
+              play();
            ?>
-        
+           
            <form>
                <input type="submit" value = "Click for another pair of cards!"/>
            </form>
            
+           
+           <p>All images are from <a href = "http://www.alovelyworld.com" >http://www.alovelyworld.com</a></p>
         </div>
     </body>
 </html>
