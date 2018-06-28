@@ -46,4 +46,22 @@
        
        return $cardImage;
    }
+   
+   function play()
+   {
+       $cards = array();
+              
+              for($i = 1; $i < 3; $i++)
+              {
+                  ${"card" . $i} = rand(0, 5);
+                  displayCardImages(${"card" . $i});
+                  $cards[] = ${"card" . $i};
+              }
+              
+              echo "<br />";
+              $message = evaluateCards($cards) ? "You won- It's a Match!" : "You lost!- Your cards don't match.";
+              
+              
+              echo "$message";
+   }
 ?>
