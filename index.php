@@ -13,6 +13,8 @@ echo "<br>";
 echo '<a href="labs/lab2/777/index.php">Lab 2</a>';
 echo "<br>";
 echo '<a href="labs/lab3/Slider/index.php">Lab 3</a>';
+echo "<br>";
+echo '<a href="labs/lab4/scart/index.php">Lab 4</a>';
 echo "<br><br>";
 echo 'Homeworks';
 echo "<br><br>";
