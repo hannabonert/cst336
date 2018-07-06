@@ -21,6 +21,8 @@ echo "<br><br>";
 echo '<a href="hw/homework1/index.html">Homework 1</a>';
 echo "<br>";
 echo '<a href="hw/homework2/index.php">Homework 2</a>';
+"<br>";
+echo '<a href="hw/homework3/index.php">Homework 3</a>';
 ?>
 </body>
 </html>
