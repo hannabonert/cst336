@@ -8,7 +8,7 @@ function displayCategories()
 {
     global $conn;
     
-    $sql = "SELECT catID, catName FROM om_category ORDER BY catName";
+    $sql = "SELECT catId, catName FROM om_category ORDER BY catName";
     
     $stmt = $conn->prepare($sql);
     $stmt->execute();
@@ -42,19 +42,19 @@ function displaySearchResults()
         
         if(!empty($_GET['category'])) //checks wether user has selected a category
         {
-            $sql .= "AND catId = :categoryId";
+            $sql .= " AND catId = :categoryId";
             $namedParameters[":categoryId"] = $_GET['category'];
         }
         
         if(!empty($_GET['priceFrom'])) //checks whether the user has typed something in the "Price From" box
         {
-            $sql .= "AND price >= :PriceFrom";
+            $sql .= " AND price >= :priceFrom";
             $namedParameters[":priceFrom"] = $_GET['priceFrom'];
         }
         
         if(!empty($_GET['priceTo'])) //checks whether the user has typed something in the "Price To" box
         {
-            $sql .= "AND price <= :PriceTo";
+            $sql .= " AND price <= :priceTo";
             $namedParameters[":priceTo"] = $_GET['priceTo'];
         }
         
@@ -121,6 +121,6 @@ function displaySearchResults()
         </div>
         
         <hr>
-        <?= displaySearchResults() ?>
+        <?=displaySearchResults() ?>
     </body>
 </html>
