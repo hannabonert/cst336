@@ -1,0 +1,30 @@
+body {
+    text-align: center;
+    background-color: #b3d9ff;
+    padding: 50px;
+
+}
+
+input {
+    border-radius: 8px;
+    padding: 10px 10px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-top:30px;
+}
+
+h1 {
+    color: gray;
+    border-left: 6px solid red;
+    background-color: lightgrey;
+}
+
+h3 {
+    color: gray;
+    border-left: 6px solid blue;
+    background-color: lightgrey;
+}
+
+a {
+    text-decoration: none;
+}
