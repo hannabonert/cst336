@@ -17,13 +17,15 @@ echo "<br>";
 echo '<a href="labs/lab4/scart/index.php">Lab 4</a>';
 echo "<br>";
 echo '<a href="labs/lab5/otterMart/index.php">Lab 5</a>';
+echo "<br>";
+echo '<a href="labs/lab6/login.php">Lab 6</a>';
 echo "<br><br>";
 echo 'Homeworks';
 echo "<br><br>";
 echo '<a href="hw/homework1/index.html">Homework 1</a>';
 echo "<br>";
 echo '<a href="hw/homework2/index.php">Homework 2</a>';
-"<br>";
+echo "<br>";
 echo '<a href="hw/homework3/index.php">Homework 3</a>';
 ?>
 </body>
