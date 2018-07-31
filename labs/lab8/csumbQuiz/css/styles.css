@@ -1,8 +1,7 @@
 body {
     font-family: 'Playfair Display', serif;
     font-size: 1.15em;
-    text-align: center;
-    color: red;
+    text-align: left;
 }
 
 h1 {
@@ -56,6 +55,5 @@ h1 {
     font-size: 25px;
     font-weight: bold;
     background-color: lightblue;
-    color: red;
 }
 
