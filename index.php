@@ -21,6 +21,8 @@ echo "<br>";
 echo '<a href="labs/lab6/login.php">Lab 6</a>';
 echo "<br>";
 echo '<a href="labs/lab7/hangman/index.html">Lab 7</a>';
+echo "<br>";
+echo '<a href="labs/lab8/csumbQuiz/index.php">Lab 8</a>';
 echo "<br><br>";
 echo 'Homeworks';
 echo "<br><br>";
