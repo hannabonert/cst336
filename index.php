@@ -34,7 +34,7 @@ echo '<a href="hw/homework3/index.php">Homework 3</a>';
 echo "<br>";
 echo '<a href="hw/homework4/rps/index.html">Homework 4</a>';
 echo "<br>";
-echo '<a href="cst336Final-master/index.php">Final Project</a>';
+echo '<a href="cst336Final/index.php">Final Project</a>';
 ?>
 </body>
 </html>
